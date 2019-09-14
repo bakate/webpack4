@@ -6,4 +6,9 @@ import Hello from './components/Hello';
 // console.log('Hello Bakate how are you doing papi');
 // console.log(` My name is ${name}`);
 // console.log(` Here we go: ${even}`);
-ReactDom.render(<Hello />, document.getElementById('hi'));
+ReactDom.render(
+  <IntlProvider locale={usersLocale} messages={translationsForUsersLocale}>
+    <Hello />
+  </IntlProvider>,
+  document.getElementById('container')
+);
