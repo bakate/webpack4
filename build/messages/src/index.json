@@ -1,0 +1,7 @@
+[
+  {
+    "id": "app.greeting",
+    "description": "Greeting to welcome the user to the app",
+    "defaultMessage": "Hello, {name}!"
+  }
+]
