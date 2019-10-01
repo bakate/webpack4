@@ -1,0 +1,42 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2019-09-30 22:48+0200\n"
+"Mime-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: en\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
+
+#: src/components/Hello.js:11
+msgid "Boite de récéption"
+msgstr "mailbox"
+
+#: src/components/Hello.js:37
+#~ msgid "Dernière connexion le <0/>."
+#~ msgstr "Last login on <0/>"
+
+#: src/components/Hello.js:37
+msgid "Dernière connexion le {lastLogin,date}."
+msgstr "Last login on {lastLogin,date}."
+
+#: src/components/Hello.js:15
+#~ msgid "See all <0>messages non-lues</0>or <1>marquer</1> comme lu."
+#~ msgstr "See all <0>unread messages</0>or <1>mark</1> as read"
+
+#: src/components/Hello.js:15
+#~ msgid "See all <0>unread messages</0>or <1>mark them</1> as read."
+#~ msgstr "See all <0>unread messages</0>or <1>mark them</1> as read."
+
+#: src/components/Hello.js:15
+msgid "Voir tous les <0>messages non-lues</0>or <1>marquer</1> comme lu."
+msgstr "See all <0>unread messages</0>or <1>mark them</1> as read."
+
+#: src/components/Hello.js:23
+msgid "{messagesCount, plural, =0 {Il n'y a pas de message} =1 {Il n'y a pas de messages, {name}} other {}}"
+msgstr "{messagesCount, plural, =0 {There is no message} =1 {There is no messages, {name}} other {}}"

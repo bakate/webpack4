@@ -1,23 +1,44 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
-import { IntlProvider, FormattedMessage } from 'react-intl';
+import { Trans, Plural, DateFormat } from '@lingui/macro';
 
-const messages = {
-  simple: 'Bonjour Monsieur',
-  placeholder: 'Bonjour {name}, comment vas-tu?',
-  date: 'Bonjour, nous sommes en {date}',
-  time: 'Il est actuellement {time} à Paris',
+const Hello = ({ messages, markAsRead }) => {
+  // const messagesCount = messages.length;
+  const { name, lastLogin } = 'Bakate';
+  return (
+    <div>
+      <h1>
+        <Trans>Boite de récéption</Trans>
+      </h1>
+
+      {/* <p>
+        <Trans>
+          Voir tous les <Link to="/unread">messages non-lues</Link>
+          {' or '}
+          <a onClick={markAsRead}>marquer</a> comme lu.
+        </Trans>
+      </p> */}
+
+      <p>
+        <Plural
+          value={5}
+          _0="Il n'y a pas de message"
+          _1={`Il n'y a pas de messages, ${name}`}
+          other={
+            <Trans>
+              Il y'a <strong>#</strong> messages dans votre boite de réception
+              {name}
+            </Trans>
+          }
+        />
+      </p>
+
+      <footer>
+        <Trans>
+          Dernière connexion le <DateFormat value={lastLogin} />
+        </Trans>
+      </footer>
+    </div>
+  );
 };
-
-const Hello = () => (
-  <IntlProvider locale="fr" messages={messages}>
-    <>
-      <FormattedMessage id="simple" />
-      <br />
-      <FormattedMessage id="placeholder" values={{ name: 'Tony' }} />
-      <br />
-      <FormattedMessage id="date" values={{ date: new Date().getFullYear() }} />
-      <br />
-    </>
-  </IntlProvider>
-);
 export default Hello;

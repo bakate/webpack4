@@ -1,12 +1,5 @@
 {
   "presets": ["@babel/preset-env", "@babel/react"],
 
-  "plugins": [
-    [
-      "react-intl",
-      {
-        "messagesDir": "./build/messages/"
-      }
-    ]
-  ]
+  "plugins": [["macros"]]
 }

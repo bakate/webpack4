@@ -1,0 +1,34 @@
+{
+  "Boite de récéption": {
+    "origin": [
+      [
+        "src/components/Hello.js",
+        11
+      ]
+    ]
+  },
+  "Voir tous les <0>messages non-lues</0>or <1>marquer</1> comme lu.": {
+    "origin": [
+      [
+        "src/components/Hello.js",
+        15
+      ]
+    ]
+  },
+  "{messagesCount, plural, =0 {Il n'y a pas de message} =1 {Il n'y a pas de messages, {name}} other {}}": {
+    "origin": [
+      [
+        "src/components/Hello.js",
+        23
+      ]
+    ]
+  },
+  "Dernière connexion le {lastLogin,date}.": {
+    "origin": [
+      [
+        "src/components/Hello.js",
+        37
+      ]
+    ]
+  }
+}
