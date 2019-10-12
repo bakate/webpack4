@@ -1,0 +1,7 @@
+{
+  "title": "Bienvenue à React avec react-i18next",
+  "hello": "C'est tellement excittant!",
+  "description": {
+    "part1": "Changer de langue en cliquant sur les buttons ci-dessus."
+  }
+}

@@ -1,15 +1,15 @@
 import React from 'react';
 import { render } from 'react-dom';
-import { I18nProvider } from '@lingui/react';
-import Hello from './components/Hello';
-import catalogFr from './locales/fr/messages';
-
-const catalogs = { fr: catalogFr };
+import './i18n';
+import CountState from './components/Count';
+import CountReducer from './components/CounterReducer';
+import Bonjour from './components/Bonjour';
 
 const App = () => (
-  <I18nProvider language="fr" catalogs={catalogs}>
-    <Hello />;
-  </I18nProvider>
+  <>
+    <CountState />
+    <CountReducer />
+    <Bonjour />
+  </>
 );
-
 render(<App />, document.getElementById('hi'));

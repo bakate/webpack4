@@ -1,0 +1,7 @@
+{
+  "title": "Willkommen zu React und React-i18next",
+  "hello": "Das ist so aufregend",
+  "description": {
+    "part1": "Ändere die Sprachen zwischen deutsch und englisch mit Hilfe der beiden Schalter."
+  }
+}

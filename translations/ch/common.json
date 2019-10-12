@@ -1,0 +1,7 @@
+{
+  "title": "欢迎使用 React-i18next 来 反应",
+  "hello": "太刺激了",
+  "description": {
+    "part1": "在上方的按钮之间切换语言。"
+  }
+}

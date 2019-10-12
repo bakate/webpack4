@@ -17,9 +17,6 @@
     "@babel/core": "^7.6.0",
     "@babel/preset-env": "^7.6.0",
     "@babel/preset-react": "^7.0.0",
-    "@lingui/cli": "^2.8.3",
-    "@lingui/loader": "^2.8.3",
-    "@lingui/macro": "^2.8.3",
     "babel-core": "^7.0.0-bridge.0",
     "babel-loader": "^8.0.6",
     "babel-plugin-macros": "^2.6.1",
@@ -30,11 +27,12 @@
     "webpack-dev-server": "^3.8.0"
   },
   "dependencies": {
-    "@lingui/react": "^2.8.3",
+    "i18next": "^17.2.0",
+    "i18next-browser-languagedetector": "^4.0.0",
+    "i18next-xhr-backend": "^3.2.0",
     "react": "^16.9.0",
-    "react-dom": "^16.9.0"
-  },
-  "lingui": {
-    "sourceLocale": "fr"
+    "react-dom": "^16.9.0",
+    "react-i18next": "^10.13.1",
+    "styled-components": "^4.4.0"
   }
 }
